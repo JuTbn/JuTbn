@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/terminal-fill.svg" />
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <title>Julien Toubon Portfolio</title>
+</head>
+<body>
+    
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-terminal-fill"></i> Julien Toubon
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link"><span class="navHome"></span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link"><span class="navWorks"></span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experiences" class="nav__link"><span class="navExperiences"></span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link"><span class="navContact"></span></a>
+                    </li>
+                    
+                    <div class="lang__menu">
+                        <div class="selected-lang">
+                            <span class="show-selected-lang"></span>
+                        </div>
+                        <ul class="langWrap">
+                            <li language="english" class="lang-li">
+                                <a class="gb">English</a>
+                            </li>
+                            <li language="french" class="lang-li">
+                                <a  class="fr">Français</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+                
+                
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            
+            
+            
+            <!-- Theme change button -->
+            <div class="nav__btns">
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main">
+        
+        <!--===== Home Section =====-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__name">Julien Toubon</h1>
+                    <span class="home__profession"><span class="homeVocation"></span></span>
+                    <a href="./assets/pdf/Julien_Toubon_CV.pdf" class="home__button button underline light-underline"><i class="ri-download-2-fill"></i> Curriculum vitae</a>
+                </div>
+                
+                <div class="home__social">
+                    <a
+                    href="https://www.linkedin.com/in/julien-toubon-761053147/"
+                    target="_blank"
+                    class="home__social-icon"
+                    ><i class="ri-linkedin-fill"></i></a>
+                    <a
+                    href="https://github.com/JuTbn"
+                    target="_blank"
+                    class="home__social-icon"
+                    ><i class="ri-github-fill"></i></a>
+                    <!-- <a
+                    href="https://twitter.com/"
+                    target="_blank"
+                    class="home__social-icon"
+                    ><i class="ri-twitter-fill"></i></a> -->
+                </div>
+                
+                <div class="home__img">
+                    <img src="assets/img/portrait_5.jpg" />
+                </div>
+            </div>
+        </section><!-- End Home Section -->
+        
+        <!--==================== ABOUT ====================-->
+        <section class="about section container">
+            <div class="about__container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+                
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        <span class="aboutTitle1"></span>
+                        <br>
+                        <span  class="aboutTitle2"></span>
+                    </h2>
+                    
+                    <p class="about__description">
+                        <span class="aboutDescription"></span>
+                    </p>
+                    
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-git-repository-fill  about__details-icon"></i>
+                            <span class="aboutDetails1"></span>
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-palette-fill about__details-icon"></i>
+                            <span class="aboutDetails2"></span>
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-team-fill about__details-icon"></i>
+                            <span class="aboutDetails3"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- ======= Works Section ======= -->
+        <section class="works" id="works">
+            <div class="container">
+                <div class="works-row">
+                    <div class="works-title" data-aos="fade-up">
+                        <h1><span class="worksTitle"></span></h1>
+                    </div>
+                </div>
+                <div id="works-grid" class="works-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="item photography" onclick="toArticle('aqoonaNounou')">
+                        <a href="./article.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3 class="workTitleAqoonaNounou"></h3>
+                                <span class="workSubtitleAqoonaNounou"></span>
+                            </div>
+                            <img class="works-img img-fluid" src="assets/img/aqoonaNounou_big.jpg">
+                        </a>
+                    </div>
+                    <div class="item photography" onclick="toArticle('aqoonaMarket')">
+                        <a href="./article.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3 class="workTitleAqoonaMarket"></h3>
+                                <span class="workSubtitleAqoonaMarket"></span>
+                            </div>
+                            <img class="works-img img-fluid" src="assets/img/aqoonaMarket.jpg">
+                        </a>
+                    </div>
+                    <div class="item branding" onclick="toArticle('cabinet')">
+                        <a href="./article.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3 class="workTitleCabinet"></h3>
+                                <span class="workSubtitleCabinet"></span>
+                            </div>
+                            <img class="works-img img-fluid" src="assets/img/cabinet.jpg">
+                        </a>
+                    </div>
+                    <div class="item design" onclick="toArticle('bdo')">
+                        <a href="./article.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3 class="workTitleBdo"></h3>
+                                <span class="workSubtitleBdo"></span>
+                            </div>
+                            <img class="works-img img-fluid" src="assets/img/bdo.jpg">
+                        </a>
+                    </div>
+                    <div class="item photography" onclick="toArticle('mougel')">
+                        <a href="./article.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3 class="workTitleMougel"></h3>
+                                <span class="workSubtitleMougel"></span>
+                            </div>
+                            <img class="works-img img-fluid" src="assets/img/mougel.jpg">
+                        </a>
+                    </div>
+                    <div class="item branding" onclick="toArticle('portfolio')">
+                        <a href="./article.html" class="item-wrap fancybox">
+                            <div class="work-info">
+                                <h3 class="workTitleToulonPlonge"></h3>
+                                <span class="workSubtitleToulonPlonge"></span>
+                            </div>
+                            <img class="works-img img-fluid" src="assets/img/portfolio.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Works Section -->        
+        
+        
+        <!--==================== EXPERIENCES ====================-->
+        <section class="experience section" id="experiences">
+            <h2 class="section__title"><span class="historyTitle"></span></h2>
+            <span class="section__subtitle"></span>
+            
+            <div class="experience__container container">
+                <div class="experience__tabs">
+                    <div class="experience__button button--flex underline dark-underline experience__active" data-target="#education">
+                        <i class="uil uil-graduation-cap experience-icon"></i>
+                        <span class="historyDegrees"></span>
+                    </div>
+                    <div class="experience__button button--flex underline dark-underline" data-target="#work">
+                        <i class="uil uil-briefcase-alt experience-icon"></i>
+                        <span class="historyExperiences"></span>
+                    </div>
+                </div>
+                
+                <div class="experience__sections">
+                    <!--==================== DEGREE CONTENT 1 ====================-->
+                    <div class="experience__content experience__active" data-content id="education">
+                        <!--==================== Degree 1 ====================-->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title"><span class="historyDegree1Title"></span></h3>
+                                <span class="experience__subtitle"> IUT Nancy-Charlemagne - Nancy (54)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021-2022
+                                </div>  
+                            </div>   
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div> 
+                        </div>
+                        <!--==================== Degree 2 ====================-->
+                        <div class="experience__data">
+                            <div></div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>                                              
+                            
+                            <div>
+                                <h3 class="experience__title"><span class="historyDegree2Title"></span></h3>
+                                <span class="experience__subtitle">IUT de Metz - Metz (57)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019-2021
+                                </div> 
+                            </div>                               
+                        </div>
+                        <!--==================== Degree 3 ====================-->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title"><span class="historyDegree3Title"></span></h3>
+                                <span class="experience__subtitle">Campus Haute-Follis - Laval (53)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2015 - 2017
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== Degree 4 ====================-->
+                        <div class="experience__data">
+                            <div></div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                            </div>
+                            
+                            <div>
+                                <h3 class="experience__title"><span class="historyDegree4Title"></span></h3>
+                                <span class="experience__subtitle">Lycée Bertrand D'Argentré - Vitré (35)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2015
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== EXPERIENCES CONTENT 2 ====================-->
+                    <div class="experience__content" data-content id="work">
+                        <!--==================== Experience 1 ====================-->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title"><span class="historyExperience1"></span></span></h3>
+                                <span class="experience__subtitle">Aqoona - Thionville (57)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 - 2022
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>                
+                        </div>
+                        <!--==================== Experience 2 ====================-->
+                        <div class="experience__data">
+                            <div></div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>                                              
+                            
+                            <div>
+                                <h3 class="experience__title"><span class="historyExperience2"></span></h3>
+                                <span class="experience__subtitle">Mougel - Metz (57)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span class="historyExperience2Date"></span>
+                                </div>  
+                            </div>                              
+                        </div>
+                        <!--==================== Experience 3 ====================-->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title"><span class="historyExperience3"></span></h3>
+                                <span class="experience__subtitle">BDO Luxembourg - Luxembourg</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span class="historyExperience3Date"></span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>                
+                        </div>
+                        <!--==================== Experience 4 ====================-->
+                        <div class="experience__data">
+                            <div></div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>                                              
+                            
+                            <div>
+                                <h3 class="experience__title"><span class="historyExperience4"></span></h3>
+                                <span class="experience__subtitle"><span class="historyExperience4Details"></span></span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018
+                                </div>  
+                            </div>                              
+                        </div>
+                        <!--==================== Experience 5 ====================-->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title"><span class="historyExperience5"></span></h3>
+                                <span class="experience__subtitle">Delagree - Etrelles (35)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span class="historyExperience5Date"></span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                        </div>
+                        <!--==================== Experience 6 ====================-->
+                        <div class="experience__data">
+                            <div></div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>                                              
+                            
+                            <div>
+                                <h3 class="experience__title"><span class="historyExperience6"></span></h3>
+                                <span class="experience__subtitle">Delagree - Etrelles (35)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span class="historyExperience6Date"></span>
+                                    <br>
+                                    <span class="historyExperience6Date2"></span>
+                                </div>  
+                            </div>                              
+                        </div>
+                        <!--==================== Experience 7 ====================-->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title"><span class="historyExperience7"></span></h3>
+                                <span class="experience__subtitle">SVA Jean Rozé - Vitré (35)</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span class="historyExperience7Date"></span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <!--<span class="experience__line"></span>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Experiences Section -->
+        
+        
+        <!--==================== CONTACT ====================-->
+        <section class="contact section container" id="contact">                
+            <div class="contact__container grid">
+                <div class="contact__box">
+                    <h2 class="section__title contact__title">
+                        Contact
+                    </h2>
+                    
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle"><span class="contactPhone"></span></h3>
+                            <span class="contact__description">
+                                <i class="ri-phone-line contact__icon"></i>
+                                +33 6 08 556 448
+                            </span>
+                        </div>
+                        
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle"><span class="contactMail"></span></h3>
+                            <span class="contact__description">
+                                <i class="ri-mail-line contact__icon"></i>
+                                julien.toubon@orange.fr
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="https://formsubmit.co/julien.toubon@orange.fr" method="POST" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" name="email" placeholder="" class="contact__input">
+                            <label class="contact__label"><span class="contactFormMail"></span></label>
+                        </div>
+                        
+                        <div class="contact__content">
+                            <input type="text" placeholder="" class="contact__input">
+                            <label class="contact__label"><span class="contactFormSubject"></span></label>
+                        </div>
+                        
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder="" class="contact__input"></textarea>                              
+                            <label class="contact__label"><span class="contactFormMessage"></span></label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="contact__button button--flex">
+                        <span class="contactSend"></span>
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section><!-- End Contact Section -->
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+        
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-terminal-fill"></i> Julien Toubon
+                </a>
+                <p class="footer__description">
+                    <span class="footerSentence1"></span>
+                    <br>
+                    <span class="footerSentence2"></span>
+                </p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Menu
+                </h3>
+                <ul class="footer__links">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link"><span class="footerHome"></span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link"><span class="footerWorks"></span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experiences" class="nav__link"><span class="footerExperiences"></span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link"><span class="footerContact"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Informations
+                </h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">
+                            +33 6 08 556 448
+                        </a>
+                    </li>
+                    <li>
+                        julien.toubon@orange.fr
+                    </li>
+                    <li>
+                        Metz - Grand-Est
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <span class="footerSocials"></span>
+                </h3>
+                
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/julien-toubon-761053147/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://github.com/JuTbn" target="_blank" class="footer__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a> -->
+                </ul>
+                
+            </div>
+        </div>
+        
+        <span class="footer__copy">
+            &#169; Julien Toubon
+        </span>
+    </footer><!-- End Footer -->
+    
+    
+    
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+    
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!--==================== DB JS ====================-->
+    <script src="assets/js/db_index.js"></script>
+</body>
+</html>
