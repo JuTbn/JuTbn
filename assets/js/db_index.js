@@ -176,10 +176,12 @@ let data = {
                 "historyTitle": "Alternant Développeur Mobile"
             },
             "historyExperience2": {
-                "historyTitle": "Stagiaire Développeur Prestashop"
+                "historyTitle": "Stagiaire Développeur Prestashop",
+                "historyDate": "Juillet 2020 - Août 2020"
             },
             "historyExperience3": {
-                "historyTitle": "Projet Tutoré - Développeur Front-end"
+                "historyTitle": "Projet Tutoré - Développeur Front-end",
+                "historyDate": "Avril 2020 - Juin 2020"
             },
             "historyExperience4": {
                 "historyTitle": "Divers Jobs (Hôtellerie, Vendange)",
