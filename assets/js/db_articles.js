@@ -307,10 +307,11 @@ if(language === null){
     language = sessionStorage.getItem('language')
 }
 
+
 let article = sessionStorage.getItem('articleName')
 if(article === null){
     sessionStorage.setItem('articleName', "aqoonaNounou")
-    language = sessionStorage.getItem('articleName')
+    article = sessionStorage.getItem('articleName')
 }
 
 
