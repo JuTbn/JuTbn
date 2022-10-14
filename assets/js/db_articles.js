@@ -42,6 +42,8 @@ let data = {
                     "tech4": "- PHP / Slim",
                     "tech5": "- HTML5/CSS3",
                     "tech6": "- SCSS",
+                    "tech7": "- Figma",
+                    "tech8": "- Jira"
                 },
                 "contentTitle1": "Retrieval an intern's project",
                 "contentParagraph1": "For my first project at Aqoona, I took over the project started by an intern before my arrival. Part of the back-end was done but the design of the functionality was only in its preamble.I made low fidelity patterns in order to capture the remaining needs and get sense of the design.",
