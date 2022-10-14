@@ -101,7 +101,7 @@ let data = {
         "footer": {
             "footerSentence1": "Web Developer",
             "footerSentence2": "Open to work",
-            "footerSocials": "Socials Media",
+            "footerSocials": "Socias Media",
             "nav": {
                 "home": "Home",
                 "works": "Works",
