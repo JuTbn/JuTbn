@@ -20,7 +20,7 @@ let data = {
                     "tech3": "- Typescript",
                     "tech4": "- PHP / Slim",
                     "tech5": "- HTML5/CSS3",
-                    "tech6": "SCSS",
+                    "tech6": "- SCSS",
                     "tech7": "- Figma",
                     "tech8": "- Jira"
                 },
@@ -299,6 +299,17 @@ let data = {
     }
 }
 
+let language = sessionStorage.getItem('language')
+if(language === null){
+    sessionStorage.setItem('language', "french")
+    language = sessionStorage.getItem('language')
+}
+
+let article = sessionStorage.getItem('articleName')
+if(article === null){
+    sessionStorage.setItem('articleName', "aqoonaNounou")
+    language = sessionStorage.getItem('articleName')
+}
 
 
 let showSelectedLang = document.querySelector('.show-selected-lang');
@@ -343,19 +354,6 @@ let footerContact = document.querySelector('.footerContact');
 
 const langEl = document.querySelector('.langWrap');
 const link = document.querySelectorAll('li.lang-li');
-
-
-let article = sessionStorage.getItem('articleName')
-if(article === null){
-    sessionStorage.setItem('articleName', "aqoonaNounou")
-    language = sessionStorage.getItem('articleName')
-}
-
-let language = sessionStorage.getItem('language')
-if(language === null){
-    sessionStorage.setItem('language', "french")
-    language = sessionStorage.getItem('language')
-}
 
 showSelectedLang.textContent = data[language].showSelectedLang;
 navHome.textContent = data[language].nav.home;
@@ -419,14 +417,6 @@ link.forEach(el => {
         contentParagraph3.textContent = data[attr].article[article].contentParagraph3;
         
         contextDetail.textContent = data[attr].article[article].contextDetail;
-        tech1.textContent = data[attr].article[article].tech1;
-        tech2.textContent = data[attr].article[article].tech2;
-        tech3.textContent = data[attr].article[article].tech3;
-        tech4.textContent = data[attr].article[article].tech4;
-        tech5.textContent = data[attr].article[article].tech5;
-        tech6.textContent = data[attr].article[article].tech6;
-        tech6.textContent = data[attr].article[article].tech7;
-        tech6.textContent = data[attr].article[article].tech6;
         footerSentence1.textContent = data[attr].footer.footerSentence1;
         footerSentence2.textContent = data[attr].footer.footerSentence2;
         footerSocials.textContent = data[attr].footer.footerSocials;

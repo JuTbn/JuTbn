@@ -40,7 +40,7 @@ let data = {
                 "workTitle": "Add prestashop module",
                 "workSubtitle": "Dev. Full-stack",
             },
-            "toulonplonge": {
+            "portfolio": {
                 "workTitle": "Creation of a portfolio",
                 "workSubtitle": "Dev. Front-end",
             },
@@ -93,7 +93,7 @@ let data = {
         "contact":{
             "contactPhone": "Call us by phone",
             "contactMail":"Write us by mail",
-            "contashowfooterHomectFormMail": "Your Email",
+            "contactFormMail": "Your Email",
             "contactFormSubject":"Subject",
             "contactFormMessage": "Message",
             "contactSend":"Send"
@@ -151,7 +151,7 @@ let data = {
                 "workTitle": "Ajout de module prestashop",
                 "workSubtitle": "Dev. Full-stack",
             },
-            "toulonplonge": {
+            "portfolio": {
                 "workTitle": "Création de mon Portfolio",
                 "workSubtitle": "Dev. Front-end",
             },
@@ -247,8 +247,8 @@ let workTitleBdo = document.querySelector('.workTitleBdo');
 let workSubtitleBdo = document.querySelector('.workSubtitleBdo');
 let workTitleMougel = document.querySelector('.workTitleMougel');
 let workSubtitleMougel = document.querySelector('.workSubtitleMougel');
-let workTitleToulonPlonge = document.querySelector('.workTitleToulonPlonge');
-let workSubtitleToulonPlonge = document.querySelector('.workSubtitleToulonPlonge');
+let workTitlePortfolio = document.querySelector('.workTitlePortfolio');
+let workSubtitlePortfolio = document.querySelector('.workSubtitlePortfolio');
 
 let experiencesTitle = document.querySelector('.experiencesTitle');
 let historyTitle = document.querySelector('.historyTitle');
@@ -322,8 +322,8 @@ workTitleBdo.textContent = data[language].works.bdo.workTitle;
 workSubtitleBdo.textContent = data[language].works.bdo.workSubtitle;
 workTitleMougel.textContent = data[language].works.mougel.workTitle;
 workSubtitleMougel.textContent = data[language].works.mougel.workSubtitle;
-workTitleToulonPlonge.textContent = data[language].works.toulonplonge.workTitle;
-workSubtitleToulonPlonge.textContent = data[language].works.toulonplonge.workSubtitle;
+workTitlePortfolio.textContent = data[language].works.portfolio.workTitle;
+workSubtitlePortfolio.textContent = data[language].works.portfolio.workSubtitle;
 historyTitle.textContent = data[language].history.historyTitle;
 historyDegrees.textContent = data[language].history.historyDegrees;
 historyExperiences.textContent = data[language].history.historyExperiences;
@@ -388,8 +388,8 @@ link.forEach(el => {
         workSubtitleBdo.textContent = data[attr].works.bdo.workSubtitle;
         workTitleMougel.textContent = data[attr].works.mougel.workTitle;
         workSubtitleMougel.textContent = data[attr].works.mougel.workSubtitle;
-        workTitleToulonPlonge.textContent = data[attr].works.toulonplonge.workTitle;
-        workSubtitleToulonPlonge.textContent = data[attr].works.toulonplonge.workSubtitle;
+        workTitlePortfolio.textContent = data[attr].works.portfolio.workTitle;
+        workSubtitlePortfolio.textContent = data[attr].works.portfolio.workSubtitle;
         historyTitle.textContent = data[attr].history.historyTitle;
         historyDegrees.textContent = data[attr].history.historyDegrees;
         historyExperiences.textContent = data[attr].history.historyExperiences;
