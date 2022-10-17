@@ -13,7 +13,7 @@ let data = {
         "about":{
             "aboutTitle1": "Junior Developer",
             "aboutTitle2": "Open to work",
-            "aboutDescription": "Retrain as Web Developer for more than 3 years, I am looking for a job where I could continue to improve my skills.",
+            "aboutDescription": "Retrain in web development for more than 3 years, I am looking for a job where I could continue to improve my skills.",
             "aboutDetails1": "Technical challenge",
             "aboutDetails2": "Creativity",
             "aboutDetails3": "Team spirit",
