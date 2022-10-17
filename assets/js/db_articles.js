@@ -240,7 +240,7 @@ let data = {
                 "contentTitle1": "Analyse du cahier des charges et proposition",
                 "contentParagraph1": "Le tuteur de projet nous a fourni un cahier des charges dans lequel les cas d'utilisations et maquette étaient fournis. Je me suis chargé de créer la partie front-end de l'application en proposant également quelques ajustements.",
                 "contentTitle2": "Rendu du projet",
-                "contentParagraph2": "Le projet permet aux utilisateurs de voir les relations des autres utilisateurs avec un mode hors connexion. Il pourra permettre aux commerciaux de l'entreprise de vérifier si des prospects ont déja eu un contact avec d'autres commerciaux.",
+                "contentParagraph2": "Le projet permet aux utilisateurs de voir les relations des autres utilisateurs avec un mode hors connexion. Il pourra permettre aux commerciaux de l'entreprise de vérifier si des prospects ont déjà eu un contact avec d'autres commerciaux.",
                 "contentTitle3": "",
                 "contentParagraph3": "",
             },

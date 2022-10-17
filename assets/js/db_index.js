@@ -13,7 +13,7 @@ let data = {
         "about":{
             "aboutTitle1": "Junior Developer",
             "aboutTitle2": "Open to work",
-            "aboutDescription": "Retrain as Web Developer for more than 3 years, I am looking for a job where I could continue to improve my skills in web development.",
+            "aboutDescription": "Retrain as Web Developer for more than 3 years, I am looking for a job where I could continue to improve my skills.",
             "aboutDetails1": "Technical challenge",
             "aboutDetails2": "Creativity",
             "aboutDetails3": "Team spirit",
@@ -124,7 +124,7 @@ let data = {
         "about":{
             "aboutTitle1": "Développeur Junior",
             "aboutTitle2": "Ouvert au marché",
-            "aboutDescription": "Reconvertis dans le développement Web depuis plus de 3 ans, je recherche un poste où je pourrais continuer d’enrichir mes compétences dans le domaine du développement web.",
+            "aboutDescription": "Reconvertis dans le développement Web depuis plus de 3 ans, je recherche un poste où je pourrais continuer d’enrichir mes compétences.",
             "aboutDetails1": "Challenge technique",
             "aboutDetails2": "Créativité",
             "aboutDetails3": "Esprit d'équipe",
