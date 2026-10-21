@@ -45,11 +45,15 @@ window.addEventListener('load', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+// Détection si l'utilisateur est sur mobile (ex: écran < 768px)
+const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
 const sr = ScrollReveal({
    origin: 'right',
    distance: '200px',
-   duration: 900,
-   delay: 300,
+   duration: isMobile ? 600 : 900,         
+   delay: isMobile ? 150 : 300,
    easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
    // reset: true, // Animations repeat
 })
