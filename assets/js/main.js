@@ -48,7 +48,7 @@ window.addEventListener('load', () => {
 const sr = ScrollReveal({
    origin: 'right',
    distance: '200px',
-   duration: 1500,
+   duration: 900,
    delay: 300,
    easing: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
    // reset: true, // Animations repeat
@@ -64,3 +64,5 @@ sr.reveal('.profile__buttons', {delay: 1300, scale: 0})
 sr.reveal('.profile__data .section__title', {delay: 1500})
 sr.reveal('.profile__description', {delay: 1700})
 sr.reveal('.main__area', {origin: 'left', delay: 2000})
+
+
