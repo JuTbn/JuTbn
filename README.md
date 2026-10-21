@@ -1,10 +1,3 @@
-<!-- Banner Image 
-
-<a href="https://jutbn.github.io/JuTbn/">
-  <img src="./assets/img/github-header-image.png" width="100%">
-</a>
--->
-
 Hi there 👋 Welcome to my github !
 
 <!-- Languages -->
